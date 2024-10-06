@@ -1,0 +1,36 @@
+<!-- Ryan Fredericks -->
+<!-- I followed the code you worked with in week 4's lecture 2, 
+ but added a way to make the image move diagonally to demonstrate my understanding of the topic at hand -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush "Moving Pictures"</title>
+    <link rel="stylesheet" type="text/css" href="moveimage.css">
+    <!-- calling in CSS stylesheet -->
+</head>
+<body>
+    <h5>Bean Time</h5>
+    <button onclick="StartMove('right')">Move Right</button>
+     <!--button for right  -->
+    <button onclick="StartMove('left')">Move Left</button>
+    <!-- button for left -->
+    <button onclick="StartMove('up')">Move Top</button>
+    <!-- button for up -->
+    <button onclick="StartMove('down')">Move Down</button>
+    <!-- button for down -->
+    <button onclick="StartMove('diaUp')">Move Up Diagonal</button>
+    <!-- button for diag up -->
+    <button onclick="StartMove('diaDown')">Move Down Diagonal</button>
+    <!-- button for diag down -->
+    <button onclick="StopMove()">Stop</button>
+    <!-- button for stopping movement -->
+    <div id="container">
+        <img id="move" src="DaBean.jpg" heght="100px" width="250px" />
+        <!-- img with id 'move' within a division -->
+    </div>
+    <script src="moveimage.js"></script>
+    <!-- calling Javascript -->
+</body>
+</html>
